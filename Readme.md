@@ -1,0 +1,5 @@
+- typescript
+- tslint
+- ts-node-dev
+- express
+- dotenv
