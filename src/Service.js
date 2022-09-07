@@ -17,10 +17,18 @@ if (cluster.isMaster) {
         console.log("Let's fork another worker!");
         cluster.fork();
     });
-} else {
-    var app = express();
-    console.log(`Worker ${process.pid} started`);
 
+    cluster.on('online', function (worker) {
+        console.log('Worker ' + worker.process.pid + ' is online');
+    });
+
+} else {
+    start();
+}
+
+function start() {
+    var app = express();
+   
     app.get("/", (req, res) => {
         res.send("Hello World!");
     });
@@ -39,6 +47,6 @@ if (cluster.isMaster) {
     });
 
     app.listen(port, () => {
-        console.log(`App listening on port ${port}`);
+        console.log(`App listening on port ${port} in process ${process.pid}`);
     });
 }
