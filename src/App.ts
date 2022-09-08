@@ -3,7 +3,6 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-// test
 app.get('/', (req, res) => {
   res.send('The sedulous hyena ate the antelope!');
 });
