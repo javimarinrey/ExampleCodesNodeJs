@@ -6,6 +6,7 @@
 - API node: cluster
 - PM2
 - loadtest
+- Grafana *
 
 ## PM2
 PM2 is a production process manager for Node.js applications with a built-in load balancer.

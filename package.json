@@ -1,5 +1,5 @@
 {
-  "name": "examplecodesnodejs",
+  "name": "NodeCode",
   "version": "1.0.0",
   "description": "",
   "main": "dist/App.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/javimarinrey/ExampleCodesNodeJs.git"
+    "url": "git+https://github.com/javimarinrey/NodeCode.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/javimarinrey/ExampleCodesNodeJs/issues"
+    "url": "https://github.com/javimarinrey/NodeCode/issues"
   },
-  "homepage": "https://github.com/javimarinrey/ExampleCodesNodeJs#readme",
+  "homepage": "https://github.com/javimarinrey/NodeCode#readme",
   "devDependencies": {
     "@types/express": "^4.17.13",
     "ts-node-dev": "^2.0.0",
